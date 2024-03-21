@@ -12,7 +12,7 @@ def reverse(text: str) -> str:
     str
         The text written backwards.
     """
-    pass
+    return(text[::-1])
 
 
 def first_to_upper(text: str) -> str:
@@ -29,7 +29,8 @@ def first_to_upper(text: str) -> str:
     str
         The modified text
     """
-    pass
+    
+    return(text.title())
 
 
 def count_vowels(text: str) -> int:
@@ -46,7 +47,12 @@ def count_vowels(text: str) -> int:
     inp
         Number of vowels.
     """
-    pass
+    sam="aeiouAEIOU"
+    ilosc=0
+    for i in text:
+    	if i in sam:
+    	   ilosc+=1
+    return ilosc
 
 
 def sum_digits(text: str) -> int:
@@ -63,7 +69,7 @@ def sum_digits(text: str) -> int:
     int
         Sum of all digits in the text.
     """
-    pass
+    return text.count(int)
 
 
 def search_substr(text: str, sub: str) -> int:
